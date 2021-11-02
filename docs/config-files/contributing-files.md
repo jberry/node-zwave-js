@@ -53,4 +53,8 @@ In order to get your configuration file included in this library:
 
 1. Check your new or changed files for potential problems using `yarn run lint:config`. Warnings in your file may be tolerated if there is a good reason for them. Errors must be fixed.
 2. Check for formatting problems using `yarn run lint:configjson`. If problems are found, you can auto-fix them with VSCode's command **Format Document** (default: <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd>) or by running `yarn run lint:configjson -W`.
-3. Create a PR.
+3. Create a PR. Please use Semantic (Conventional) Commit Messages as defined at https://www.conventionalcommits.org/en/v1.0.0/
+	* Examples
+	  - `feat: Add new Lutron XYZ Swith`
+	  - `docs: Add helpful examples`
+	  - `fix: edit device parameter typos`
