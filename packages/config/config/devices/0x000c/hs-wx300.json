@@ -1,0 +1,633 @@
+{
+	"revision": 1,
+	"manufacturer": "HomeSeer Technologies",
+	"manufacturerId": "0x000c",
+	"label": "HS-WX300",
+	"description": "Wall Dimmer & Switch",
+	"devices": [
+		{
+			"productType": "0x4447",
+			"productId": "0x4037"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"associations": {
+		"1": {
+			"label": "Lifeline",
+			"description": "Lifeline association only supports the \"manual reset\" event.",
+			"maxNodes": 5,
+			"isLifeline": true
+		},
+		"2": {
+			"label": "Companion Sync",
+			"description": "Any device added to group 2 will be controlled. This allows other WX300 devices to used as companion switches. LEDS will be kept in sync.",
+			"maxNodes": 5
+		}
+	},
+	"paramInformation": [
+		{
+			"#": "3",
+			"label": "Bottom LED Operation",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 1,
+			"defaultValue": 1,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Bottom LED ON if load is OFF",
+					"value": 0
+				},
+				{
+					"label": "Bottom LED OFF if load is OFF",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "4",
+			"label": "Orientation",
+			"description": "Sets paddle load orientation",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Top of Paddle turns load ON",
+					"value": 0
+				},
+				{
+					"label": "Bottom of Paddle turns load ON",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "5",
+			"label": "Dimming Threshold",
+			"description": "Sets the lowest dimming threshold",
+			"valueSize": 1,
+			"minValue": 1,
+			"maxValue": 14,
+			"defaultValue": 1
+		},
+		{
+			"#": "6",
+			"label": "Central Scene Control",
+			"description": "Enables/Disables Central Scene and multiple tap functions",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Central Scene Enabled, controls load with delay. Enables Multi-tap and",
+					"value": 0
+				},
+				{
+					"label": "Central Scene Disabled, controls load instantly. Disables multi-tap, c",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "11",
+			"label": "Remote Ramp Rate",
+			"description": "Set dimmer ramp rate for remote control",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 90,
+			"defaultValue": 3
+		},
+		{
+			"#": "12",
+			"label": "Local Ramp Rate",
+			"description": "Set dimmer ramp rate for local control",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 90,
+			"defaultValue": 3
+		},
+		{
+			"#": "13",
+			"label": "Status Mode",
+			"description": "Set dimmer display mode",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Load Status",
+					"value": 0
+				},
+				{
+					"label": "Custom Status",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "14",
+			"label": "Load Status LED Color",
+			"description": "Set the LED color when displaying load status",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 6,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "White",
+					"value": 0
+				},
+				{
+					"label": "Red",
+					"value": 1
+				},
+				{
+					"label": "Green",
+					"value": 2
+				},
+				{
+					"label": "Blue",
+					"value": 3
+				},
+				{
+					"label": "Magenta",
+					"value": 4
+				},
+				{
+					"label": "Yellow",
+					"value": 5
+				},
+				{
+					"label": "Cyan",
+					"value": 6
+				}
+			]
+		},
+		{
+			"#": "21",
+			"label": "Status LED 1 Color",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 7,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Red",
+					"value": 1
+				},
+				{
+					"label": "Green",
+					"value": 2
+				},
+				{
+					"label": "Blue",
+					"value": 3
+				},
+				{
+					"label": "Magenta",
+					"value": 4
+				},
+				{
+					"label": "Yellow",
+					"value": 5
+				},
+				{
+					"label": "Cyan",
+					"value": 6
+				},
+				{
+					"label": "White",
+					"value": 7
+				}
+			]
+		},
+		{
+			"#": "22",
+			"label": "Status LED 2 Color",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 7,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Off",
+					"value": 0
+				},
+				{
+					"label": "Red",
+					"value": 1
+				},
+				{
+					"label": "Green",
+					"value": 2
+				},
+				{
+					"label": "Blue",
+					"value": 3
+				},
+				{
+					"label": "Magenta",
+					"value": 4
+				},
+				{
+					"label": "Yellow",
+					"value": 5
+				},
+				{
+					"label": "Cyan",
+					"value": 6
+				},
+				{
+					"label": "White",
+					"value": 7
+				}
+			]
+		},
+		{
+			"#": "23",
+			"label": "Status LED 3 Color",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 7,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Off",
+					"value": 0
+				},
+				{
+					"label": "Red",
+					"value": 1
+				},
+				{
+					"label": "Green",
+					"value": 2
+				},
+				{
+					"label": "Blue",
+					"value": 3
+				},
+				{
+					"label": "Magenta",
+					"value": 4
+				},
+				{
+					"label": "Yellow",
+					"value": 5
+				},
+				{
+					"label": "Cyan",
+					"value": 6
+				},
+				{
+					"label": "White",
+					"value": 7
+				}
+			]
+		},
+		{
+			"#": "24",
+			"label": "Status LED 4 Color",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 7,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Off",
+					"value": 0
+				},
+				{
+					"label": "Red",
+					"value": 1
+				},
+				{
+					"label": "Green",
+					"value": 2
+				},
+				{
+					"label": "Blue",
+					"value": 3
+				},
+				{
+					"label": "Magenta",
+					"value": 4
+				},
+				{
+					"label": "Yellow",
+					"value": 5
+				},
+				{
+					"label": "Cyan",
+					"value": 6
+				},
+				{
+					"label": "White",
+					"value": 7
+				}
+			]
+		},
+		{
+			"#": "25",
+			"label": "Status LED 5 Color",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 7,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Off",
+					"value": 0
+				},
+				{
+					"label": "Red",
+					"value": 1
+				},
+				{
+					"label": "Green",
+					"value": 2
+				},
+				{
+					"label": "Blue",
+					"value": 3
+				},
+				{
+					"label": "Magenta",
+					"value": 4
+				},
+				{
+					"label": "Yellow",
+					"value": 5
+				},
+				{
+					"label": "Cyan",
+					"value": 6
+				},
+				{
+					"label": "White",
+					"value": 7
+				}
+			]
+		},
+		{
+			"#": "26",
+			"label": "Status LED 6 Color",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 7,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Off",
+					"value": 0
+				},
+				{
+					"label": "Red",
+					"value": 1
+				},
+				{
+					"label": "Green",
+					"value": 2
+				},
+				{
+					"label": "Blue",
+					"value": 3
+				},
+				{
+					"label": "Magenta",
+					"value": 4
+				},
+				{
+					"label": "Cyan",
+					"value": 6
+				},
+				{
+					"label": "White",
+					"value": 7
+				}
+			]
+		},
+		{
+			"#": "27",
+			"label": "Status LED 7 Color",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 7,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Off",
+					"value": 0
+				},
+				{
+					"label": "Red",
+					"value": 1
+				},
+				{
+					"label": "Green",
+					"value": 2
+				},
+				{
+					"label": "Blue",
+					"value": 3
+				},
+				{
+					"label": "Magenta",
+					"value": 4
+				},
+				{
+					"label": "Yellow",
+					"value": 5
+				},
+				{
+					"label": "Cyan",
+					"value": 6
+				},
+				{
+					"label": "White",
+					"value": 7
+				}
+			]
+		},
+		{
+			"#": "30",
+			"label": "Blink Frequency",
+			"description": "Set blink frequency when displaying custom status",
+			"valueSize": 3,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 0
+		},
+		{
+			"#": "31[0x3f]",
+			"label": "LED 7 Blink Status",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Solid",
+					"value": 0
+				},
+				{
+					"label": "Blink",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "31[0x5f]",
+			"label": "LED 6 Blink Status",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Solid",
+					"value": 0
+				},
+				{
+					"label": "Blink",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "31[0x6f]",
+			"label": "LED 5 Blink Status",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Solid",
+					"value": 0
+				},
+				{
+					"label": "Blink",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "31[0x77]",
+			"label": "LED 4 Blink Status",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Solid",
+					"value": 0
+				},
+				{
+					"label": "Blink",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "31[0x7b]",
+			"label": "LED 3 Blink Status",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Solid",
+					"value": 0
+				},
+				{
+					"label": "Blink",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "31[0x7d]",
+			"label": "LED 2 Blink Status",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Solid",
+					"value": 0
+				},
+				{
+					"label": "Blink",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "31[0x7e]",
+			"label": "LED 1 Blink Status",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "Solid",
+					"value": 0
+				},
+				{
+					"label": "Blink",
+					"value": 1
+				}
+			]
+		},
+		{
+			"#": "32",
+			"label": "Wire mode",
+			"description": "Sets the Wire mode / no neutral mod of the switch",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 1,
+			"defaultValue": 0,
+			"allowManualEntry": false,
+			"options": [
+				{
+					"label": "3 wire mode (Neutral, Line, & Load)",
+					"value": 0
+				},
+				{
+					"label": "2 wire mode (Line & Load)",
+					"value": 1
+				}
+			]
+		}
+	]
+}
